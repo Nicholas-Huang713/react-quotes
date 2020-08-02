@@ -1,6 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 import {withRouter, Link} from 'react-router-dom';
+import { makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 
 const errStyle = { color: 'red' };
 
@@ -93,10 +95,8 @@ class Register extends React.Component {
                     value={this.state.password}
                     onChange={this.handleChange}/>
             <br/>
-            <button>Submit</button>
+            <button>Register</button>
           </form>
-          <hr />
-          <Link to="/login">Login Page</Link>
         </div>
       );
     }
